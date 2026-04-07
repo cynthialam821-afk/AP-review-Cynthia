@@ -1,60 +1,173 @@
-# index.html  
-<!DOCTYPE html>  
-<html lang="zh">  
-<head>  
-  <meta charset="UTF-8">  
-  <title>AP review videos</title>  
-  <style>  
-    body {  
-      font-family: Arial, sans-serif;  
-      background: #f7f7f7;  
-      text-align: center;  
-      padding: 20px;  
-    }  
-    h1 {  
-      margin-bottom: 30px;  
-    }  
-    .video {  
-      background: white;  
-      padding: 15px;  
-      margin: 20px auto;  
-      width: 80%;  
-      max-width: 600px;  
-      border-radius: 10px;  
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
-    }  
-    iframe {  
-      width: 100%;  
-      height: 315px;  
-      border-radius: 8px;  
-    }  
-    .link {  
-      margin-top: 10px;  
-      font-size: 14px;  
-    }  
-  </style>  
-</head>  
-  
-<body>  
-  
-<h1>AP review videos</h1>  
-  
-<div class="video">  
-  <h3>AP Micro econ- Unit 1 content</h3>  
-<iframe src="https://b23.tv/zRIq9T0 "100%" height="500" frameborder="0" allowfullscreen>
-</iframe>  
-  <div class="link">  
-    <a href="https://b23.tv/zRIq9T0" target="_blank">去Bilibili看吧!</a>  
-  </div>  
-</div> 
-  
-<div class="video">  
-  <h3>AP Micro econ- Unit 2</h3>  
-  <iframe src="https://b23.tv/WsfVlgT"></iframe>  
-  <div class="link">  
-    <a href="https://b23.tv/WsfVlgT" target="_blank">复制视频链接</a>  
-  </div>  
-</div>  
-  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>AP review videos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 30px 0;
+      font-size: 24px;
+    }
+
+    /* 导航栏 */
+    .nav {
+      margin: 30px 0;
+    }
+
+    .nav a {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 0 6px;
+      background: white;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav a:hover {
+      background: #e3f2fd;
+    }
+
+    /* 学科卡片 */
+    .subjects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 40px 0;
+    }
+
+    .box {
+      background: white;
+      width: 200px;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .box:hover {
+      background: #e3f2fd;
+    }
+
+    /* 视频样式 */
+    .video {
+      background: white;
+      padding: 15px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 8px;
+      border: 0;
+    }
+
+    .link {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .link a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1 id="home">AP Review Videos</h1>
+
+<!-- 导航 -->
+<div class="nav">
+  <a href="#home">🏠 Home</a>
+  <a href="#apbio">🧬 AP Bio</a>
+  <a href="#apmicro">📊 AP Micro</a>
+  <a href="#apmacro">📈 AP Macro</a>
+</div>
+
+<!-- 学科入口卡片 -->
+<div class="subjects">
+  <div class="box" onclick="location.href='#apbio'">
+    <h3>AP Biology</h3>
+  </div>
+
+  <div class="box" onclick="location.href='#apmicro'">
+    <h3>AP Micro Econ</h3>
+  </div>
+
+  <div class="box" onclick="location.href='#apmacro'">
+    <h3>AP Macro Econ</h3>
+  </div>
+</div>
+
+<!-- ====================== -->
+<!-- AP Bio -->
+<div id="apbio">
+  <h2>AP Biology</h2>
+  <div class="video">
+    <h3>AP Bio 复习视频</h3>
+    <p>后面你自己放视频</p>
+  </div>
+</div>
+
+<!-- ====================== -->
+<!-- AP Micro Econ -->
+<div id="apmicro">
+  <h2>AP Micro Econ</h2>
+
+  <div class="video">
+    <h3>AP Micro econ- Unit 1 content</h3>
+    <iframe src="https://b23.tv/zRIq9T0" allowfullscreen></iframe>
+    <div class="link">
+      <a href="https://b23.tv/zRIq9T0" target="_blank">去Bilibili看吧!</a>
+    </div>
+  </div>
+
+  <div class="video">
+    <h3>AP Micro econ- Unit 2</h3>
+    <iframe src="https://b23.tv/WsfVlgT" allowfullscreen></iframe>
+    <div class="link">
+      <a href="https://b23.tv/WsfVlgT" target="_blank">去Bilibili看吧!</a>
+    </div>
+  </div>
+</div>
+
+<!-- ====================== -->
+<!-- AP Macro Econ -->
+<div id="apmacro">
+  <h2>AP Macro Econ</h2>
+  <div class="video">
+    <h3>AP Macro 视频在这里</h3>
+    <p>以后你把宏观视频放这里</p>
+  </div>
+</div>
+
+</body>
+</html>

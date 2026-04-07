@@ -1,0 +1,59 @@
+# index.html  
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>我的复习视频库</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      background: #f7f7f7;  
+      text-align: center;  
+      padding: 20px;  
+    }  
+    h1 {  
+      margin-bottom: 30px;  
+    }  
+    .video {  
+      background: white;  
+      padding: 15px;  
+      margin: 20px auto;  
+      width: 80%;  
+      max-width: 600px;  
+      border-radius: 10px;  
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+    }  
+    iframe {  
+      width: 100%;  
+      height: 315px;  
+      border-radius: 8px;  
+    }  
+    .link {  
+      margin-top: 10px;  
+      font-size: 14px;  
+    }  
+  </style>  
+</head>  
+  
+<body>  
+  
+<h1>📚 我的复习视频库</h1>  
+  
+<div class="video">  
+  <h3>AP Calculus - Derivatives</h3>  
+  <iframe src="https://www.youtube.com/embed/你的ID"></iframe>  
+  <div class="link">  
+    <a href="https://youtu.be/你的ID" target="_blank">复制视频链接</a>  
+  </div>  
+</div>  
+  
+<div class="video">  
+  <h3>AP Biology - Genetics</h3>  
+  <iframe src="https://www.youtube.com/embed/你的ID"></iframe>  
+  <div class="link">  
+    <a href="https://youtu.be/你的ID" target="_blank">复制视频链接</a>  
+  </div>  
+</div>  
+  
+</body>  
+</html>  

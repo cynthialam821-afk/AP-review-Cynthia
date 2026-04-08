@@ -97,6 +97,42 @@
       color: #0066cc;
       text-decoration: none;
     }
+
+    /* 笔记照片样式 */
+    .note-page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .note-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .note-item {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .note-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .note-text {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -110,6 +146,7 @@
   <a href="#apbio">🧬 AP Bio</a>
   <a href="#apmicro">📊 AP Micro</a>
   <a href="#apmacro">📈 AP Macro</a>
+  <a href="#notes">📝 My Notes</a>
 </div>
 
 <!-- 学科入口卡片 -->
@@ -166,6 +203,32 @@
   <div class="video">
     <h3>AP Macro 视频在这里</h3>
     <p>macro 敬请期待！</p>
+  </div>
+</div>
+
+<!-- ====================== -->
+<!-- 笔记照片区域（你要的） -->
+<div id="notes">
+  <h2>My Notes 笔记照片</h2>
+  <div class="note-page">
+    <div class="note-grid">
+
+      <div class="note-item">
+        <img src="IMG_8010.jpg" alt="笔记1">
+        <div class="AP microecon Unit 6- Externality">AP 笔记 1</div>
+      </div>
+
+      <div class="note-item">
+        <img src="note2.jpg" alt="笔记2">
+        <div class="note-text">AP 笔记 2</div>
+      </div>
+
+      <div class="note-item">
+        <img src="note3.jpg" alt="笔记3">
+        <div class="note-text">AP 笔记 3</div>
+      </div>
+
+    </div>
   </div>
 </div>
 
